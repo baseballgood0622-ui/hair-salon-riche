@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALON & ACCESS（サロン情報・アクセス） | Hair Salon RICHE 表参道</title>
+  <meta name="description" content="表参道の美容サロン「Hair Salon RICHE（リッシュ）」のサロン情報・アクセス・店内設備のご案内。表参道駅A2出口より徒歩3分。営業時間、定休日、道順、よくあるご質問を掲載しています。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       ヘッダー (Header)
+       ====================================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-en">RICHE<span>.</span></span>
+        <span class="header__logo-sub">HAIR SALON OMOTESANDO</span>
+      </a>
+
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">HOME</a></li>
+          <li class="nav__item"><a href="menu.html" class="nav__link">MENU & PRICE</a></li>
+          <li class="nav__item"><a href="salon.html" class="nav__link is-active">SALON & ACCESS</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="#reservation" class="btn btn--gold header__btn-reserve js-reserve-btn" role="button">
+            RESERVATION <span class="btn__icon">→</span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="header__hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__lines">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- スマホ用ドロワーメニュー -->
+  <div class="drawer-menu" aria-hidden="true">
+    <ul class="drawer-menu__list">
+      <li class="drawer-menu__item">
+        <a href="index.html" class="drawer-menu__link">
+          HOME
+          <span class="drawer-menu__link-ja">トップページ</span>
+        </a>
+      </li>
+      <li class="drawer-menu__item">
+        <a href="menu.html" class="drawer-menu__link">
+          MENU & PRICE
+          <span class="drawer-menu__link-ja">メニュー・料金</span>
+        </a>
+      </li>
+      <li class="drawer-menu__item">
+        <a href="salon.html" class="drawer-menu__link">
+          SALON & ACCESS
+          <span class="drawer-menu__link-ja">サロン情報・アクセス</span>
+        </a>
+      </li>
+    </ul>
+    <div class="drawer-menu__cta">
+      <a href="#reservation" class="btn btn--gold btn--lg js-reserve-btn drawer-menu__btn">今すぐWEB予約する</a>
+      <a href="tel:0354680000" class="btn btn--outline-white js-tel-link drawer-menu__btn">お電話でのご予約</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         ページヘッダー (Page Hero)
+         ====================================================================== -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80');">
+      <div class="page-hero__overlay"></div>
+      <div class="container page-hero__content">
+        <h1 class="page-hero__en">SALON & ACCESS</h1>
+        <p class="page-hero__ja">サロン情報・アクセス</p>
+        <p style="font-size: 0.85rem; color: #DDDDDD; margin-top: 12px;">
+          表参道駅徒歩3分。心地よい静寂に包まれたプライベートサロン。<br>
+          <span class="mock-badge">※住所・電話番号等の記載は制作サンプルの仮情報です</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         サロン概要＆アクセス詳細セクション
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="salon-info__grid">
+          <!-- 店舗基本情報テーブル -->
+          <div class="reveal">
+            <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+              <span class="section-header__en" style="font-size: 2rem;">SALON INFO</span>
+              <span class="section-header__ja" style="padding-bottom: 0;">店舗概要</span>
+            </div>
+
+            <table class="salon-table">
+              <tr>
+                <th>サロン名</th>
+                <td>
+                  <strong>Hair Salon RICHE（ヘアサロン リッシュ）</strong>
+                </td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>
+                  〒150-0001<br>
+                  <span class="js-address-display">東京都渋谷区神宮前4丁目XX-XX RICHE 表参道ビル 2F</span><br>
+                  <span class="mock-badge">※仮の所在地です</span>
+                </td>
+              </tr>
+              <tr>
+                <th>最寄り駅</th>
+                <td>
+                  東京メトロ銀座線・半蔵門線・千代田線<strong>「表参道駅」A2出口より徒歩3分</strong><br>
+                  東京メトロ副都心線・千代田線「明治神宮前〈原宿〉駅」5番出口より徒歩7分
+                </td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td>
+                  <a href="tel:0354680000" class="js-tel-link" style="color: var(--color-gold-dark); font-weight: 600; font-size: 1.1rem;">
+                    <span class="js-tel-display">03-5468-XXXX</span>
+                  </a><br>
+                  <span style="font-size: 0.8rem; color: #888888;">※ご予約・お問い合わせはお気軽にどうぞ</span>
+                </td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>
+                  <strong>平日</strong> 11:00 - 20:30（最終受付 カット 19:30 / カラー・パーマ 18:30）<br>
+                  <strong>土日祝</strong> 10:00 - 19:30（最終受付 カット 18:30 / カラー・パーマ 17:30）
+                </td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>毎週火曜日、第1・第3月曜日（※祝日の場合は営業し、翌平日振替）</td>
+              </tr>
+              <tr>
+                <th>座席数</th>
+                <td>全8席（全席半個室 / フルフラットシャンプー台4台完備）</td>
+              </tr>
+              <tr>
+                <th>お支払い方法</th>
+                <td>クレジットカード（VISA / Master / JCB / AMEX / Diners）、交通系IC、PayPay、楽天ペイ</td>
+              </tr>
+              <tr>
+                <th>設備・サービス</th>
+                <td>フリーWi-Fi、充電器完備、ドリンクサービス、タブレット電子書籍（雑誌200誌以上）</td>
+              </tr>
+            </table>
+
+            <div style="margin-top: 32px;">
+              <a href="#reservation" class="btn btn--gold btn--lg js-reserve-btn" role="button">
+                このサロンをWEB予約する <span class="btn__icon">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- マップ＆道順案内 -->
+          <div class="reveal reveal-delay-1">
+            <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+              <span class="section-header__en" style="font-size: 2rem;">ROUTE GUIDE</span>
+              <span class="section-header__ja" style="padding-bottom: 0;">表参道駅からの道順</span>
+            </div>
+
+            <div class="map-container" style="margin-bottom: 24px;">
+              <div class="map-placeholder">
+                <div class="map-placeholder__icon">📍</div>
+                <h3 class="map-placeholder__title">Hair Salon RICHE 表参道</h3>
+                <p class="map-placeholder__address">東京都渋谷区神宮前4丁目XX-XX RICHE 表参道ビル 2F</p>
+                <a href="https://maps.google.com/?q=表参道駅" target="_blank" rel="noopener noreferrer" class="btn btn--gold" style="font-size: 0.82rem; padding: 10px 20px;">
+                  Googleマップで開く ↗
+                </a>
+              </div>
+            </div>
+
+            <div style="background: var(--color-gray-bg); padding: 24px; border-radius: 4px; border-left: 3px solid var(--color-gold);">
+              <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; color: var(--color-black);">
+                🚶‍♂️ 表参道駅 A2出口からの分かりやすいルート
+              </h4>
+              <ol style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.8; list-style: decimal; padding-left: 20px;">
+                <li style="margin-bottom: 6px;">表参道駅「A2出口」を出て地上へ上がります。（目の前に「Apple 表参道」があります）</li>
+                <li style="margin-bottom: 6px;">「Apple 表参道」と「伊藤病院」の間の路地（原宿方面へ続く通り）へ右折して入ります。</li>
+                <li style="margin-bottom: 6px;">突き当たりまで直進し、右折して約50mほど進みます。</li>
+                <li>左手に見えるガラス張りのデザイナーズビル「RICHE 表参道ビル」の2階です。（エレベーターで2Fへお越しください）</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================================
+             空間のこだわり (Space & Interior)
+             ====================================================================== -->
+        <div style="margin-top: 60px;">
+          <div class="section-header reveal">
+            <span class="section-header__en">COMFORTABLE SPACE</span>
+            <span class="section-header__ja">快適な空間へのこだわり</span>
+            <p class="section-header__lead">
+              お客様が心から寛ぎ、特別な時間を過ごしていただけるよう、インテリアや設備の一つひとつにこだわりました。
+            </p>
+          </div>
+
+          <div class="space-features__grid">
+            <div class="space-card reveal">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="全席半個室の上質プライベート空間" class="space-card__img" loading="lazy">
+              <div class="space-card__body">
+                <h3 class="space-card__title">全席半個室設計</h3>
+                <p class="space-card__desc">
+                  隣の席との間隔を贅沢に取り、上質なパーテーションで仕切られた半個室。人目を気にせず、担当スタイリストとのカウンセリングやお寛ぎの時間をゆったりとお楽しみいただけます。
+                </p>
+              </div>
+            </div>
+
+            <div class="space-card reveal reveal-delay-1">
+              <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" alt="フルフラットYUMEシャンプー台" class="space-card__img" loading="lazy">
+              <div class="space-card__body">
+                <h3 class="space-card__title">フルフラット「YUME」シャンプー</h3>
+                <p class="space-card__desc">
+                  まるでベッドに横たわっているかのような、首や腰に一切負担のない最高級シャンプーベッドを採用。間接照明の落ち着いた空間で極上のヘッドスパをご体感ください。
+                </p>
+              </div>
+            </div>
+
+            <div class="space-card reveal reveal-delay-2">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="厳選オーガニック＆最新サイエンスケア" class="space-card__img" loading="lazy">
+              <div class="space-card__body">
+                <h3 class="space-card__title">厳選されたプロダクト＆ドリンク</h3>
+                <p class="space-card__desc">
+                  髪と頭皮に優しいオーガニック商材と最新の毛髪科学トリートメントを取り揃え。施術の待ち時間には季節のハーブティーや挽きたて珈琲をサービスしております。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================================
+             よくあるご質問 (FAQ Section)
+             ====================================================================== -->
+        <div style="margin-top: 100px;">
+          <div class="section-header reveal">
+            <span class="section-header__en">FAQ</span>
+            <span class="section-header__ja">よくあるご質問</span>
+            <p class="section-header__lead">
+              初めてのお客様からよくいただくご質問をまとめました。不安な点はお気軽にお問い合わせください。
+            </p>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto;" class="reveal">
+            <div style="margin-bottom: 20px; background: #FFFFFF; border: 1px solid var(--color-gray-line); border-radius: 4px; padding: 24px;">
+              <h4 style="font-size: 1rem; font-weight: 600; color: var(--color-black); margin-bottom: 8px; display: flex; align-items: baseline; gap: 8px;">
+                <span style="color: var(--color-gold); font-family: var(--font-en-serif); font-size: 1.3rem;">Q.</span>
+                初めて利用するのですが、髪型が決まっていなくても大丈夫ですか？
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.8; padding-left: 28px;">
+                <strong>A.</strong> もちろん大歓迎です。全体の約半数のお客様が「似合う髪型を相談したい」「今の髪の悩みを改善したい」とノープランでご来店されます。骨格やお好みをしっかりヒアリングした上で最適なスタイルをご提案いたします。
+              </p>
+            </div>
+
+            <div style="margin-bottom: 20px; background: #FFFFFF; border: 1px solid var(--color-gray-line); border-radius: 4px; padding: 24px;">
+              <h4 style="font-size: 1rem; font-weight: 600; color: var(--color-black); margin-bottom: 8px; display: flex; align-items: baseline; gap: 8px;">
+                <span style="color: var(--color-gold); font-family: var(--font-en-serif); font-size: 1.3rem;">Q.</span>
+                当日の予約や直前の予約変更・キャンセルは可能ですか？
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.8; padding-left: 28px;">
+                <strong>A.</strong> 空席がある場合は当日のWEB予約やお電話でのご予約も承っております。ご予約の変更・キャンセルはお電話またはWEB予約のマイページよりご連絡いただけます。キャンセル料はいただいておりません。
+              </p>
+            </div>
+
+            <div style="margin-bottom: 20px; background: #FFFFFF; border: 1px solid var(--color-gray-line); border-radius: 4px; padding: 24px;">
+              <h4 style="font-size: 1rem; font-weight: 600; color: var(--color-black); margin-bottom: 8px; display: flex; align-items: baseline; gap: 8px;">
+                <span style="color: var(--color-gold); font-family: var(--font-en-serif); font-size: 1.3rem;">Q.</span>
+                クレジットカードや電子マネーは利用できますか？
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.8; padding-left: 28px;">
+                <strong>A.</strong> 各種主要クレジットカード（VISA, MasterCard, JCB, American Express, Diners Club）、交通系ICカード（Suica, PASMO等）、QRコード決済（PayPay, 楽天ペイ, LINE Pay等）をご利用いただけます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 予約CTAバナー -->
+    <section class="cta-banner" id="reservation">
+      <div class="container reveal">
+        <p class="cta-banner__sub">RESERVATION</p>
+        <h2 class="cta-banner__title">
+          表参道の隠れ家サロンで、<br>
+          あなたをお待ちしております。
+        </h2>
+        <p class="cta-banner__desc">
+          WEB予約なら24時間いつでも空席確認・即時予約が可能です。<br>
+          お電話でのご予約・ご相談も心よりお待ちしております。
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#reservation" class="btn btn--gold btn--lg js-reserve-btn" role="button">
+            今すぐWEB予約する（24時間受付） <span class="btn__icon">→</span>
+          </a>
+          <a href="tel:0354680000" class="btn btn--outline-white btn--lg js-tel-link">
+            お電話でのお問い合わせ：<span class="js-tel-display">03-5468-XXXX</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <h2 class="footer__brand-logo">RICHE<span>.</span></h2>
+          <p class="footer__brand-desc">
+            表参道の大人のための上質なプライベートヘアサロン。<br>
+            洗練された技術と心地よい空間で、本質的な美しさを引き出します。
+          </p>
+          <div class="footer__sns">
+            <a href="#" class="footer__sns-link js-sns-instagram" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram">IG</a>
+            <a href="#" class="footer__sns-link" aria-label="公式YouTube">YT</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">NAVIGATION</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">ホーム (HOME)</a></li>
+            <li><a href="menu.html">メニュー＆料金 (MENU & PRICE)</a></li>
+            <li><a href="salon.html">サロン情報・アクセス (SALON & ACCESS)</a></li>
+            <li><a href="#reservation" class="js-reserve-btn">WEB予約 (RESERVATION)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">CONTACT & RESERVATION</h3>
+          <div class="footer__contact-info">
+            <p>ご予約・お問い合わせはお電話またはWEBにて承ります。</p>
+            <a href="tel:0354680000" class="footer__contact-tel js-tel-link">
+              TEL: <span class="js-tel-display">03-5468-XXXX</span>
+            </a>
+            <p style="font-size: 0.8rem; color: #888888;">受付時間：営業時間に準ずる</p>
+            <div style="margin-top: 16px;">
+              <a href="#reservation" class="btn btn--gold btn--sm js-reserve-btn" style="padding: 10px 24px; font-size: 0.82rem;">
+                今すぐWEB予約する
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Hair Salon RICHE. All Rights Reserved.</p>
+        <p><span class="mock-badge">※当サイトに掲載されているサロン情報・人物写真は制作サンプルです</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- スマホ用固定予約バー -->
+  <aside class="mobile-fixed-bar" aria-label="スマートフォン用クイック予約バー">
+    <div class="mobile-fixed-bar__inner">
+      <a href="tel:0354680000" class="mobile-fixed-bar__tel js-tel-link" aria-label="サロンへ電話で問い合わせ">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>電話予約</span>
+      </a>
+      <a href="#reservation" class="btn btn--gold mobile-fixed-bar__btn js-reserve-btn">
+        今すぐWEB予約する
+      </a>
+    </div>
+  </aside>
+
+  <!-- 予約方法選択モーダル -->
+  <div class="modal-overlay" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="閉じる">&times;</button>
+      
+      <div class="modal-header">
+        <p class="modal-title-en">RESERVATION</p>
+        <h3 class="modal-title-ja" id="modalTitle">ご予約方法の選択</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-options">
+          <a href="#" id="modalHotpepperBtn" class="modal-option-btn modal-option-btn--primary" target="_blank" rel="noopener noreferrer">
+            <div class="modal-option-icon">✦</div>
+            <div class="modal-option-content">
+              <span class="modal-option-label">ホットペッパーで24時間WEB予約</span>
+              <span class="modal-option-desc">空席確認・即時予約・ポイントが貯まります</span>
+            </div>
+            <span>→</span>
+          </a>
+
+          <a href="#" id="modalLineBtn" class="modal-option-btn modal-option-btn--secondary" target="_blank" rel="noopener noreferrer">
+            <div class="modal-option-icon">💬</div>
+            <div class="modal-option-content">
+              <span class="modal-option-label">LINEで事前相談・ご予約</span>
+              <span class="modal-option-desc">髪のお悩みやメニューの相談もお気軽にどうぞ</span>
+            </div>
+            <span>→</span>
+          </a>
+
+          <a href="tel:0354680000" id="modalTelBtn" class="modal-option-btn modal-option-btn--secondary">
+            <div class="modal-option-icon">📞</div>
+            <div class="modal-option-content">
+              <span class="modal-option-label">お電話でのご予約</span>
+              <span class="modal-option-desc">TEL: <strong class="js-tel-display">03-5468-XXXX</strong>（営業時間内）</span>
+            </div>
+            <span>→</span>
+          </a>
+        </div>
+
+        <p class="modal-footer-note">
+          ※当日予約やお急ぎのご予約はお電話にてお問い合わせください。<br>
+          ※施術中は電話に出られない場合がございます。WEB予約のご利用がスムーズです。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

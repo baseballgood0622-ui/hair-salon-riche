@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENU & PRICE（メニュー・料金） | Hair Salon RICHE 表参道</title>
+  <meta name="description" content="表参道の美容サロン「Hair Salon RICHE（リッシュ）」のメニュー・料金表。骨格補正カット、透明感カラー、髪質改善トリートメント、ヘッドスパなどの施術内容・料金・所要時間をご案内します。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       ヘッダー (Header)
+       ====================================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-en">RICHE<span>.</span></span>
+        <span class="header__logo-sub">HAIR SALON OMOTESANDO</span>
+      </a>
+
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">HOME</a></li>
+          <li class="nav__item"><a href="menu.html" class="nav__link is-active">MENU & PRICE</a></li>
+          <li class="nav__item"><a href="salon.html" class="nav__link">SALON & ACCESS</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="#reservation" class="btn btn--gold header__btn-reserve js-reserve-btn" role="button">
+            RESERVATION <span class="btn__icon">→</span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="header__hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__lines">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- スマホ用ドロワーメニュー -->
+  <div class="drawer-menu" aria-hidden="true">
+    <ul class="drawer-menu__list">
+      <li class="drawer-menu__item">
+        <a href="index.html" class="drawer-menu__link">
+          HOME
+          <span class="drawer-menu__link-ja">トップページ</span>
+        </a>
+      </li>
+      <li class="drawer-menu__item">
+        <a href="menu.html" class="drawer-menu__link">
+          MENU & PRICE
+          <span class="drawer-menu__link-ja">メニュー・料金</span>
+        </a>
+      </li>
+      <li class="drawer-menu__item">
+        <a href="salon.html" class="drawer-menu__link">
+          SALON & ACCESS
+          <span class="drawer-menu__link-ja">サロン情報・アクセス</span>
+        </a>
+      </li>
+    </ul>
+    <div class="drawer-menu__cta">
+      <a href="#reservation" class="btn btn--gold btn--lg js-reserve-btn drawer-menu__btn">今すぐWEB予約する</a>
+      <a href="tel:0354680000" class="btn btn--outline-white js-tel-link drawer-menu__btn">お電話でのご予約</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         ページヘッダー (Page Hero)
+         ====================================================================== -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1600&q=80');">
+      <div class="page-hero__overlay"></div>
+      <div class="container page-hero__content">
+        <h1 class="page-hero__en">MENU & PRICE</h1>
+        <p class="page-hero__ja">メニュー・料金のご案内</p>
+        <p style="font-size: 0.85rem; color: #DDDDDD; margin-top: 12px;">
+          すべてシャンプー・ブロー込・税込表記です。<br>
+          <span class="mock-badge">※料金設定はサンプルです。実際のメニューに合わせて自由に変更可能です</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         メニューカテゴリ スクロールナビゲーション
+         ====================================================================== -->
+    <nav class="menu-nav" aria-label="メニューカテゴリー切り替え">
+      <div class="container">
+        <ul class="menu-nav__list">
+          <li><a href="#cut" class="menu-nav__link is-active">カット (Cut)</a></li>
+          <li><a href="#color" class="menu-nav__link">カラー (Color)</a></li>
+          <li><a href="#perm" class="menu-nav__link">パーマ (Perm)</a></li>
+          <li><a href="#treatment" class="menu-nav__link">トリートメント (Treatment)</a></li>
+          <li><a href="#headspa" class="menu-nav__link">ヘッドスパ (Head Spa)</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ======================================================================
+         料金表本体セクション
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- 1. カット (Cut) -->
+        <div class="price-category reveal" id="cut">
+          <div class="price-category__header">
+            <div class="price-category__title-group">
+              <h2 class="price-category__en">CUT</h2>
+              <span class="price-category__ja">カット</span>
+            </div>
+            <span class="price-category__note">※シャンプー・ブロー・スタイリング込</span>
+          </div>
+
+          <div class="price-table">
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">
+                  骨格補正デザインカット
+                  <span class="price-item__badge">定番人気</span>
+                </h3>
+                <p class="price-item__desc">
+                  頭の骨格、毛流れ、髪の生え癖、お顔立ちのバランスを見極めて立体的な美しさを引き出す独自のカット。ご自宅でも手ぐしだけでサロンの仕上がりが再現できます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥7,700 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約60分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">ディレクターカット（鈴木指名）</h3>
+                <p class="price-item__desc">
+                  サロン代表・鈴木による特別なオートクチュールカット。繊細な毛量調整とフォルムメイクで、ショート・ボブスタイルの持続性を高めます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥9,900 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約60分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">前髪・ポイントメンテナンスカット</h3>
+                <p class="price-item__desc">
+                  印象を大きく左右する前髪や顔周りのニュアンスカット。前回のカットから少し伸びて気になるときに気軽にご利用いただけます。（シャンプー・ブロー別）
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥2,200 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約20分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. カラー (Color) -->
+        <div class="price-category reveal" id="color">
+          <div class="price-category__header">
+            <div class="price-category__title-group">
+              <h2 class="price-category__en">COLOR</h2>
+              <span class="price-category__ja">ヘアカラー</span>
+            </div>
+            <span class="price-category__note">※髪の長さに応じたロング料金：M +¥1,100 / L +¥2,200</span>
+          </div>
+
+          <div class="price-table">
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">
+                  表参道シグネチャー イルミナ艶カラー
+                  <span class="price-item__badge">人気 NO.1</span>
+                </h3>
+                <p class="price-item__desc">
+                  日本人特有の赤みを打ち消し、まるで外国人のような柔らかい透明感とツヤを演出。髪への負担を極限まで抑えた最新プレミアムカラー剤を使用します。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥9,900 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約90分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">オーガニック・リタッチカラー（根本染め）</h3>
+                <p class="price-item__desc">
+                  頭皮と髪に優しい92%天然由来のオーガニックカラー剤を使用。生え際から3cm以内の根本を自然に美しく馴染ませます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥7,150 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約60分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">ハイライト / シークレットインナーカラー</h3>
+                <p class="price-item__desc">
+                  立体感と陰影を生み出す極細ハイライト、または耳周りや襟足から覗く上品なインナーカラー。大人のオフィスヘアにも馴染む洗練されたデザインです。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥8,800〜 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: +約40分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. パーマ＆縮毛矯正 (Perm & Straight) -->
+        <div class="price-category reveal" id="perm">
+          <div class="price-category__header">
+            <div class="price-category__title-group">
+              <h2 class="price-category__en">PERM & STRAIGHT</h2>
+              <span class="price-category__ja">パーマ・縮毛矯正</span>
+            </div>
+            <span class="price-category__note">※ダメージレス薬剤・トリートメント処理剤込み</span>
+          </div>
+
+          <div class="price-table">
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">
+                  プレミアム酸性ストレート（髪質改善縮毛矯正）
+                  <span class="price-item__badge">リピート多数</span>
+                </h3>
+                <p class="price-item__desc">
+                  髪本来の弱酸性に近い薬剤で、うねりやクセを自然に伸ばします。針金のように真っ直ぐになりすぎず、柔らかくしなやかな仕上がりです。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥20,900 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約150分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">低温デジタルパーマ</h3>
+                <p class="price-item__desc">
+                  低温熱処理によりコテで巻いたような弾力のある柔らかなウェーブを長時間キープ。朝のスタイリング時間を大幅に短縮できます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥12,100 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約90分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">ポイント前髪ストレート</h3>
+                <p class="price-item__desc">
+                  汗や湿気で崩れやすい前髪やフェイスラインのクセを自然に伸ばし、扱いやすいストレートに整えます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥5,500 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約45分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. トリートメント (Treatment) -->
+        <div class="price-category reveal" id="treatment">
+          <div class="price-category__header">
+            <div class="price-category__title-group">
+              <h2 class="price-category__en">TREATMENT</h2>
+              <span class="price-category__ja">髪質改善トリートメント</span>
+            </div>
+            <span class="price-category__note">※超音波アイロン促進器を使用</span>
+          </div>
+
+          <div class="price-table">
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">
+                  RICHE シグネチャー 髪質改善エステ（深層5Step補修）
+                  <span class="price-item__badge">感動体験</span>
+                </h3>
+                <p class="price-item__desc">
+                  毛髪内部の結合を強化し、ダメージを受けた髪にハリ・コシ・ツヤを蘇らせる最高峰トリートメント。超音波アイロンでナノレベルの美容成分を髪深部まで浸透させます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥8,800 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約45分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">クイックモイスチャートリートメント（3Step）</h3>
+                <p class="price-item__desc">
+                  短時間で髪表面のキューティクルを整え、滑らかな指通りと潤いを与えるデイリートリートメント。カットやカラーとの組み合わせにおすすめです。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥4,400 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約20分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. ヘッドスパ (Head Spa) -->
+        <div class="price-category reveal" id="headspa">
+          <div class="price-category__header">
+            <div class="price-category__title-group">
+              <h2 class="price-category__en">HEAD SPA</h2>
+              <span class="price-category__ja">極上ヘッドスパ</span>
+            </div>
+            <span class="price-category__note">※フルフラットYUMEシャンプー台で施術</span>
+          </div>
+
+          <div class="price-table">
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">
+                  深層アロマ筋膜リリース・ヘッドスパ（40分）
+                  <span class="price-item__badge">リフレッシュ</span>
+                </h3>
+                <p class="price-item__desc">
+                  厳選した天然オーガニックアロマの香りに包まれながら、頭部の筋膜をじっくりほぐす贅沢なスパ。眼精疲労の緩和やリフトアップ効果、健やかな美髪の土台を整えます。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥6,600 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約40分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+
+            <div class="price-item">
+              <div class="price-item__main">
+                <h3 class="price-item__name">プレミアム美髪頭皮生炭酸スパ（60分コース）</h3>
+                <p class="price-item__desc">
+                  高濃度生炭酸クレンジングで普段落としきれない毛穴の皮脂やシリコンを除去。デコルテ・肩までのマッサージを含む最上級のリラクゼーションコースです。
+                </p>
+              </div>
+              <div class="price-item__meta">
+                <p class="price-item__cost">¥9,900 <span>(税込)</span></p>
+                <p class="price-item__time">所要時間: 約60分</p>
+              </div>
+              <div class="price-item__action">
+                <a href="#reservation" class="btn btn--gold js-reserve-btn">予約する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 補足・注意事項 -->
+        <div class="menu-notes reveal">
+          <h3 class="menu-notes__title">
+            <span>ℹ️</span> 料金および施術に関するご案内
+          </h3>
+          <ul class="menu-notes__list">
+            <li>すべてのメニューは「消費税込み」の価格を表示しております。</li>
+            <li>カット以外の単品メニュー（カラーのみ、トリートメントのみ等）をご希望の場合は、別途シャンプー・ブロー料金（¥2,200）を頂戴いたします。</li>
+            <li>髪の長さによるロング料金（カラー・パーマ）：ミディアム（鎖骨まで）+¥1,100 / ロング（鎖骨下）+¥2,200を頂戴いたします。</li>
+            <li>代表・鈴木をご指名の場合はディレクター指名料（¥2,200）を頂戴いたします。その他のスタイリスト指名料は一律¥1,100となります。</li>
+            <li>【10日間無料技術保証】：万が一仕上がりにご満足いただけない場合や扱いづらい部分がございましたら、施術日より10日以内であれば無償でお直しさせていただきます。</li>
+            <li>お支払いには各種クレジットカード（VISA, Mastercard, JCB, AMEX, Diners）および交通系電子マネー、QRコード決済をご利用いただけます。</li>
+          </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;" class="reveal">
+          <a href="#reservation" class="btn btn--gold btn--lg js-reserve-btn" role="button">
+            このメニューでWEB予約する <span class="btn__icon">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 予約CTAバナー -->
+    <section class="cta-banner" id="reservation">
+      <div class="container reveal">
+        <p class="cta-banner__sub">RESERVATION</p>
+        <h2 class="cta-banner__title">
+          ご希望の日時・メニューから<br>
+          いつでも簡単にご予約いただけます。
+        </h2>
+        <p class="cta-banner__desc">
+          「どのメニューを選べば良いか迷っている」というお客様も、<br>
+          当日スタイリストと丁寧にご相談の上、最適な施術プランを決定できますのでご安心ください。
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#reservation" class="btn btn--gold btn--lg js-reserve-btn" role="button">
+            今すぐWEB予約する（24時間受付） <span class="btn__icon">→</span>
+          </a>
+          <a href="tel:0354680000" class="btn btn--outline-white btn--lg js-tel-link">
+            お電話で相談：<span class="js-tel-display">03-5468-XXXX</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <h2 class="footer__brand-logo">RICHE<span>.</span></h2>
+          <p class="footer__brand-desc">
+            表参道の大人のための上質なプライベートヘアサロン。<br>
+            洗練された技術と心地よい空間で、本質的な美しさを引き出します。
+          </p>
+          <div class="footer__sns">
+            <a href="#" class="footer__sns-link js-sns-instagram" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram">IG</a>
+            <a href="#" class="footer__sns-link" aria-label="公式YouTube">YT</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">NAVIGATION</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">ホーム (HOME)</a></li>
+            <li><a href="menu.html">メニュー＆料金 (MENU & PRICE)</a></li>
+            <li><a href="salon.html">サロン情報・アクセス (SALON & ACCESS)</a></li>
+            <li><a href="#reservation" class="js-reserve-btn">WEB予約 (RESERVATION)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">CONTACT & RESERVATION</h3>
+          <div class="footer__contact-info">
+            <p>ご予約・お問い合わせはお電話またはWEBにて承ります。</p>
+            <a href="tel:0354680000" class="footer__contact-tel js-tel-link">
+              TEL: <span class="js-tel-display">03-5468-XXXX</span>
+            </a>
+            <p style="font-size: 0.8rem; color: #888888;">受付時間：営業時間に準ずる</p>
+            <div style="margin-top: 16px;">
+              <a href="#reservation" class="btn btn--gold btn--sm js-reserve-btn" style="padding: 10px 24px; font-size: 0.82rem;">
+                今すぐWEB予約する
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Hair Salon RICHE. All Rights Reserved.</p>
+        <p><span class="mock-badge">※当サイトに掲載されているサロン情報・人物写真は制作サンプルです</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- スマホ用固定予約バー -->
+  <aside class="mobile-fixed-bar" aria-label="スマートフォン用クイック予約バー">
+    <div class="mobile-fixed-bar__inner">
+      <a href="tel:0354680000" class="mobile-fixed-bar__tel js-tel-link" aria-label="サロンへ電話で問い合わせ">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>電話予約</span>
+      </a>
+      <a href="#reservation" class="btn btn--gold mobile-fixed-bar__btn js-reserve-btn">
+        今すぐWEB予約する
+      </a>
+    </div>
+  </aside>
+
+  <!-- 予約方法選択モーダル -->
+  <div class="modal-overlay" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="閉じる">&times;</button>
+      
+      <div class="modal-header">
+        <p class="modal-title-en">RESERVATION</p>
+        <h3 class="modal-title-ja" id="modalTitle">ご予約方法の選択</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-options">
+          <a href="#" id="modalHotpepperBtn" class="modal-option-btn modal-option-btn--primary" target="_blank" rel="noopener noreferrer">
+            <div class="modal-option-icon">✦</div>
+            <div class="modal-option-content">
+              <span class="modal-option-label">ホットペッパーで24時間WEB予約</span>
+              <span class="modal-option-desc">空席確認・即時予約・ポイントが貯まります</span>
+            </div>
+            <span>→</span>
+          </a>
+
+          <a href="#" id="modalLineBtn" class="modal-option-btn modal-option-btn--secondary" target="_blank" rel="noopener noreferrer">
+            <div class="modal-option-icon">💬</div>
+            <div class="modal-option-content">
+              <span class="modal-option-label">LINEで事前相談・ご予約</span>
+              <span class="modal-option-desc">髪のお悩みやメニューの相談もお気軽にどうぞ</span>
+            </div>
+            <span>→</span>
+          </a>
+
+          <a href="tel:0354680000" id="modalTelBtn" class="modal-option-btn modal-option-btn--secondary">
+            <div class="modal-option-icon">📞</div>
+            <div class="modal-option-content">
+              <span class="modal-option-label">お電話でのご予約</span>
+              <span class="modal-option-desc">TEL: <strong class="js-tel-display">03-5468-XXXX</strong>（営業時間内）</span>
+            </div>
+            <span>→</span>
+          </a>
+        </div>
+
+        <p class="modal-footer-note">
+          ※当日予約やお急ぎのご予約はお電話にてお問い合わせください。<br>
+          ※施術中は電話に出られない場合がございます。WEB予約のご利用がスムーズです。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
